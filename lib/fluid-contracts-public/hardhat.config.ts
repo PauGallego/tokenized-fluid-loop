@@ -17,6 +17,7 @@ const {
   POLYGONSCAN_API_KEY,
   ARBITRUM_API_KEY,
   BASE_API_KEY,
+  ETHERSCAN_APIV2_KEY,
 } = process.env;
 
 const sharedNetworkConfig: HttpNetworkUserConfig = {};
@@ -105,7 +106,7 @@ const config = {
     },
     arbitrum: {
       ...sharedNetworkConfig,
-      url: "https://1rpc.io/arb",
+      url: "https://arbitrum-one-rpc.publicnode.com",
     },
     base: {
       ...sharedNetworkConfig,
@@ -116,6 +117,10 @@ const config = {
       url: "https://1rpc.io/matic",
       gasPrice: 35_000_000_000,
     },
+    plasma: {
+      ...sharedNetworkConfig,
+      url: "https://rpc.plasma.to",
+    },
   },
   etherscan: {
     // blockchain explorers api keys from .env
@@ -123,15 +128,24 @@ const config = {
       mainnet: ETHERSCAN_API_KEY || "",
       polygon: POLYGONSCAN_API_KEY || "",
       arbitrumOne: ARBITRUM_API_KEY || "",
-      base: BASE_API_KEY || "",
+      base: ETHERSCAN_APIV2_KEY || "",
+      plasma: ETHERSCAN_APIV2_KEY || "",
     },
     customChains: [
       {
         network: "base",
         chainId: 8453,
         urls: {
-          apiURL: "https://api.basescan.org/api",
+          apiURL: "https://api.etherscan.io/v2/api?chainid=8453",
           browserURL: "https://basescan.org/",
+        },
+      },
+      {
+        network: "plasma",
+        chainId: 9745,
+        urls: {
+          apiURL: "https://api.routescan.io/v2/network/mainnet/evm/9745/etherscan",
+          browserURL: "https://plasmascan.to/",
         },
       },
     ],

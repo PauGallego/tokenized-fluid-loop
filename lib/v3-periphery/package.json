@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.4.4",
+  "version": "1.3.0",
   "homepage": "https://uniswap.org",
   "keywords": [
     "uniswap",
@@ -29,15 +29,16 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "3.4.2-solc-0.7",
+    "@openzeppelin/contracts": "3.4.1-solc-0.7-2",
     "@uniswap/lib": "^4.0.1-alpha",
-    "@uniswap/v2-core": "^1.0.1",
-    "@uniswap/v3-core": "^1.0.0",
-    "base64-sol": "1.0.1"
+    "@uniswap/v2-core": "1.0.1",
+    "@uniswap/v3-core": "1.0.0",
+    "base64-sol": "1.0.1",
+    "hardhat-watcher": "^2.1.1"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@typechain/ethers-v5": "^4.0.0",
     "@types/chai": "^4.2.6",
@@ -46,9 +47,8 @@
     "decimal.js": "^10.2.1",
     "ethereum-waffle": "^3.0.2",
     "ethers": "^5.0.8",
-    "hardhat": "^2.6.8",
+    "hardhat": "^2.2.0",
     "hardhat-typechain": "^0.3.5",
-    "hardhat-watcher": "^2.1.1",
     "is-svg": "^4.3.1",
     "mocha": "^6.2.2",
     "mocha-chai-jest-snapshot": "^1.1.0",
