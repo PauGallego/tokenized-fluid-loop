@@ -1,0 +1,29 @@
+{
+  "lib/flashloan-aggregator": {
+    "rev": "d967db3c6a524b66d45f12a9af7c8c288c1edf29"
+  },
+  "lib/fluid-contracts-public": {
+    "rev": "d96dad8960144f26580bda246f64d4555702da94"
+  },
+  "lib/forge-std": {
+    "rev": "8bbcf6e3f8f62f419e5429a0bd89331c85c37824"
+  },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v5.5.0",
+      "rev": "fcbae5394ae8ad52d8e580a3477db99814b9d565"
+    }
+  },
+  "lib/v3-core": {
+    "tag": {
+      "name": "v1.0.0",
+      "rev": "e3589b192d0be27e100cd0daaf6c97204fdb1899"
+    }
+  },
+  "lib/v3-periphery": {
+    "tag": {
+      "name": "v1.3.0",
+      "rev": "80f26c86c57b8a5e4b913f42844d4c8bd274d058"
+    }
+  }
+}
